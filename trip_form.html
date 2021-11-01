@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">	
+    <title>Plan-A-Trip</title>
+    <link rel="stylesheet" href="final.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+    <main>
+		<div class="topnav">
+		  <a class="active" href="index.html">Home</a>
+		  <a href="trip_form.html">Price Quote</a>
+		  <a href="about.html">About</a>
+		</div>
+		<h1>Plan-A-Trip</h1>
+		<p id="info">Submit a completed form to receive a price quote.<p>
+		<form id="t_form" action="trip_summary.html" method="get">
+			<div class="nights">
+			<label>Stay length: </label>
+				<input type="radio" name="night" id="one_night" value="one_night" checked>1 Night
+				<input type="radio" name="night" id="two_night" value="two_night">2 Nights
+				<input type="radio" name="night" id="three_night" value="three_night">3 Nights<br>
+			</div>
+			<select name="destination" id="destination">
+				<option value="">Select a destination</option>
+				<option value="1">Miami, Florida</option>
+				<option value="2">Las Vegas, Nevada</option>
+				<option value="3">Pheonix, Arizona</option>
+				<option value="4">Minneapolis, Minnesota</option>
+				<option value="5">Cancun, Mexico</option>
+			</select>
+			<div id="c_code">
+				<label for="code">Coupon Code: </label>
+					<input type="text" name="code" id="code">
+			</div>
+			<div id="amens">
+			<label for="amenities">Preferred Amenities(ex: pool, spa, internet):</label>
+				<textarea id="amenities" name="amenities" rows="4" cols="50"></textarea>
+			</div>
+			<br><br>
+			<input type="submit" value="Submit" id="submit">
+			<input type="reset" value="Clear" id="reset">
+		</form>
+    </main>
+	<script src="trip.js"></script>
+</body>
+</html>
